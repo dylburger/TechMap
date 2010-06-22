@@ -1,0 +1,173 @@
+/* This is an IE7 CSS fix for the lab and printer positions */
+
+div.helpdesk {
+top: 32%;
+left: 20.5%;
+}
+
+div.av {
+top: -8.5%;
+left: 36.5%;
+}
+
+div.mathlan {
+top: 0%;
+left: 42%;
+}
+
+div.scilab {
+top: 6.5%;
+left: 35.5%;
+}
+
+div.scilib {
+top: -10%;
+left: 41.7%; 
+}
+
+div.iif {
+top: -24%;
+left: 9.4%;
+}
+
+div.read {
+top: 7.2%;
+left: 30%;
+}
+
+div.cleveland {
+top: -3.8%;
+left: 9.2%;
+}
+
+div.younker {
+top: -83%;
+left: 54%;
+}
+
+div.noyce {
+top: -71%;
+left: 37%;
+}
+
+div.norris {
+top: -104%;
+left: 81%;
+}
+
+div.lazier {
+top: -48%;
+left: 52.8%;
+}
+
+div.ccl {
+top: -100.2%;
+left: 24.6%;
+}
+
+div.gencomp {
+top: -140%;
+left: 40.8%;
+}
+
+div.burling {
+top: -131%;
+left: 6.2%;
+}
+
+/* Open and Closed printer styles */
+
+div.helpdesk2_printer {
+top: 31.5%;
+left: 20.3%;
+}
+
+div.av_printer {
+top: -9.6%;
+left: 36.8%;
+}
+
+div.duerer_printer {
+top: 0%;
+left: 42%;
+}
+
+div.scilab_printer {
+top: 6%;
+left: 35.7%;
+}
+
+div.scilib_printer {
+top: -9%;
+left: 41.4%;
+}
+
+div.lib_iif_printer {
+top: -24%;
+left: 9.3%;
+}
+
+div.read2_printer {
+top: 7.2%;
+left: 29.8%;
+}
+
+div.cleveland_printer {
+top: -3.8%;
+left: 9%;
+}
+
+div.younker2_printer {
+top: -83%;
+left: 54%;
+}
+
+div.baskerville_printer {
+top: -71%;
+left: 37%;
+}
+
+div.norris2_printer {
+top: -104%;
+left: 81.3%;
+}
+
+div.lazier_printer {
+top: -48%;
+left: 53%;
+}
+
+div.ccl3_bw_printer {
+top: -100.6%;
+left: 24.8%;
+}
+
+div.jrc_email_printer {
+top: -117.6%;
+left: 51.7%;
+}
+
+div.rose_printer {
+top: -80%;
+left: 74.6%;
+}
+
+div.gencomp2_printer {
+top: -167.5%;
+left: 42%;
+}
+
+div.inslab2_printer {
+top: -167.5%;
+left: 42%;
+}
+
+div.lib_1st_flr_printer {
+top: -167%;
+left: 6.8%;
+}
+
+div.lib_2nd_flr_printer {
+top: -167%;
+left: 4%;
+}

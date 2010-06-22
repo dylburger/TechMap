@@ -1,0 +1,586 @@
+/* Style sheet for Grinnell College Campus Computer Technology Map */ 
+
+/* Start our CSS off clean -- see http://www.peakflowdesign.com/design/10-useful-css-tricks-to-conquer-the-world/ */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
+blockquote,th,td {margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; }
+fieldset,img { border:0; }
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal; }
+ol,ul { list-style:none; }
+caption,th { text-align:left; }
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal; }
+abbr,acronym { border:0; }
+
+/* End cleanup */
+
+html {
+	font-size: 11px;
+	text-align: center
+	}
+
+body {
+	text-align: center;
+	min-width: 770px;
+	}
+
+h1 {
+	font-size: 250%;
+	font-family: 'Gill Sans', 'Tahoma', 'Sans-Serif';
+	text-align: center;
+	padding: 10px;
+	}
+
+h2 {
+	font-family: Verdana, sans-serif;
+	font-size: 150%;
+	text-align: center;
+	padding: 0.3em;
+	}
+
+h3 {
+	font-family: Verdana, sans-serif;
+	font-size: 120%;
+	text-align: center
+	}
+
+p {
+	padding: 0.3em;
+	font-family: Verdana, sans-serif, 'Helvetica', 'Palatine Linotype', sans-serif;
+	text-align: center;
+	}
+
+p.heading {
+	padding: 0.1em;
+	}
+	
+p#footer {
+	 text-align: center;
+	 }
+
+.bold {
+	font-weight: bold;
+}
+
+.centeralign {
+	text-align: center;
+	}
+
+/* Styles for div elements */
+
+div.wrapper {
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0.3em;
+	}
+
+div.header {
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+div.main {
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0.4cm;
+	}
+
+div.image {
+	margin-left: -1.65cm;
+	padding: 0.3cm;
+	background-image: url(../pictures/campus.gif);
+	background-repeat: no-repeat;
+	height: 442px;
+	width: 1128px;
+	}
+
+div.floatleft {
+	width: 30%;
+	float: left;
+	}
+
+div.floatright {
+	width: 70%;
+	float: right;
+	}
+
+/* CSS for displaying lab sketchups as div backgrounds */
+
+div#ccl {
+        background-image: url(../pictures/lab_sketchups/ccl.png);
+        background-repeat: no-repeat;
+        }
+
+/* There are some strange movement issues with my div elements
+that arose out of the jquery tabs; this should be a temporary fix */
+
+div.offset {
+	margin-left: -1.65cm;
+	padding: 0.3cm;
+	height: 439px;
+	width: 1128px;
+	}
+
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0.5cm;
+	}
+
+/* Open and Closed lab styles */
+
+div.lab_open {
+	background-image: url(../pictures/open.gif);
+	background-repeat: no-repeat;
+	height: 51px;
+	width: 50px;
+	position: relative;
+	}
+
+div.lab_closed {
+	background-image: url(../pictures/closed.gif);
+	background-repeat: no-repeat;
+	height: 51px;
+	width: 50px;
+	position: relative;
+	}
+
+/* Available and unavailable computer styles */
+
+div.available_comp {
+        background-image: url(../pictures/open.gif);
+        background-repeat: no-repeat;
+        height: 51px;
+        width: 50px;
+        position: relative;
+        }
+
+div.unavailable_comp {
+        background-image: url(../pictures/closed.gif);
+        background-repeat: no-repeat;
+        height: 51px;
+        width: 50px;
+        position: relative;
+        }
+
+	
+/* Describes location of lab images based on campus location. I tried to place them in an order most suited
+to their presentation, where both the lab and printer styles can have the same positioning */
+
+div.helpdesk {
+	top: 33%;
+	left: 20.6%;
+	}
+
+div.av {
+	top: -8%;
+	left: 37.3%;
+	}
+
+div.mathlan {
+	top: 0%;
+	left: 42%;
+	}
+
+div.scilab {
+	top: 7%;
+	left: 36%;
+	}
+
+div.scilib {
+	top: -10%;
+	left: 42%;
+	}
+
+div.iif {
+	top: -24%;
+	left: 10%;
+	}
+
+div.read {
+	top: 7.4%;
+	left: 30.7%;
+	}
+
+div.cleveland {
+	top: -4.2%;
+	left: 9.7%;
+	}
+
+div.younker {
+	top: -87%;
+	left: 55%;
+	}
+
+div.noyce {
+	top: -74%;
+	left: 38%;
+	}
+
+div.norris {
+	top: -109%;
+	left: 82.5%;
+	}
+
+div.lazier {
+	top: -51.3%;
+	left: 53.8%;
+	}
+
+div.ccl {
+	top: -105.5%;
+	left: 25%;
+	}
+
+div.gencomp {
+	top: -146%;
+	left: 41.5%;
+	}
+
+div.burling {
+	top: -136%;
+	left: 6.5%;
+	}
+
+/* The Helpdesk, AV Center, and MathLAN need their own image styles, since they have their own images */
+
+div.helpdesk_open_image {
+	background-image: url(../pictures/helpdesk_open.gif);
+	}
+
+div.helpdesk_closed_image {
+	background-image: url(../pictures/helpdesk_closed.gif);
+	}
+
+div.av_open_image {
+	background-image: url(../pictures/av_open.gif);
+	}
+
+div.av_closed_image {
+	background-image: url(../pictures/av_closed.gif);
+	}
+
+div.mathlan_open_image {
+	background-image: url(../pictures/tux_open.gif);
+	}
+
+div.mathlan_closed_image {
+	background-image: url(../pictures/tux_closed.gif);
+	}
+
+/* Open and Closed printer styles */
+
+div.printer_open {
+	background-image: url(../pictures/printer_open.gif);
+	background-repeat: no-repeat;
+	height: 51px;
+	width: 50px;
+	position: relative;
+	}
+
+div.printer_closed {
+	background-image: url(../pictures/printer_closed.gif);
+	background-repeat: no-repeat;
+	height: 51px;
+	width: 50px;
+	position: relative;
+	}
+
+/* Describes location of printer images based on campus location */
+
+div.helpdesk2_printer {
+	top: 32.7%;
+	left: 20.6%;
+	}
+
+div.av_printer {
+	top: -9%;
+	left: 37.3%;
+	}
+
+div.duerer_printer {
+	top: 0%;
+	left: 42.5%;
+	}
+
+div.scilab_printer {
+	top: 7%;
+	left: 36.3%;
+	}
+
+div.scilib_printer {
+	top: -10%;
+	left: 42%;
+	}
+
+div.lib_iif_printer {
+	top: -24%;
+	left: 9.5%;
+	}
+
+div.read2_printer {
+	top: 7.2%;
+	left: 30.4%;
+	}
+
+div.cleveland_printer {
+	top: -4.2%;
+	left: 9.3%;
+	}
+
+div.younker2_printer {
+	top: -87%;
+	left: 55%;
+	}
+
+div.baskerville_printer {
+	top: -74%;
+	left: 38%;
+	}
+
+div.norris2_printer {
+	top: -109%;
+	left: 83%;
+	}
+
+div.lazier_printer {
+	top: -51%;
+	left: 54%;
+	}
+
+div.ccl3_bw_printer {
+	top: -105.5%;
+	left: 25%;
+	}
+
+div.jrc_email_printer {
+	top: -120%;
+	left: 52.5%;
+	}
+
+div.rose_printer {
+	top: -85%;
+	left: 76%;
+	}
+
+div.inslab2_printer {
+	top: -175%;
+	left: 42%;
+	}
+
+div.gencomp2_printer {
+	top: -175%;
+	left: 42%;
+	}
+
+div.lib_1st_flr_printer {
+	top: -174%;
+	left: 6.8%;
+	}
+
+div.lib_2nd_flr_printer {
+	top: -174%;
+	left: 4%;
+	}
+
+/* Styles for pop-ups 
+   Thanks to Eric Meyer for the inspiration
+   http://meyerweb.com/eric/css/edge/popups/demo.html */
+
+div.inside {
+	height: 51px;
+	width: 50px;
+	}
+
+div.popup_open div.inside div.text {display: none;}
+
+div.popup_open div.inside:hover div.text {
+	display: block;
+	position: absolute; top: 25px; left: 25px; width: 250px;
+	padding: 5px; margin: 10px; z-index: 50;
+	color: #AAA; background-color: black;
+	font: 80% Verdana, sans-serif; text-align: center;
+	}
+
+div.popup_closed div.inside div.text {display: none;}
+
+div.popup_closed div.inside:hover div.text {
+	display: block;
+	position: absolute; top: 25px; left: 25px; width: 125px;
+	padding: 5px; margin: 10px; z-index: 50;
+	color: #AAA; background-color: black;
+	font: 10px Verdana, sans-serif; text-align: center;
+	}
+
+div.popup_change_status div.inside div.text {display: none;}
+
+div.popup_change_status div.inside:hover div.text {
+	display: block;
+	position: absolute; top: 25px; left: 25px; width: 275px;
+	padding: 5px; margin: 10px; z-index: 50;
+	color: #AAA; background-color: black;
+	font: 10px Verdana, sans-serif; text-align: center;
+	}
+
+/* Popups for available/unavailable computers */
+
+div.popup_available div.inside div.text {display: none;}
+
+div.popup_available div.inside:hover div.text {
+        display: block;
+        position: absolute; top: 25px; left: 25px; width: 125px;
+        padding: 5px; margin: 10px; z-index: 50;
+        color: #AAA; background-color: black;
+        font: 80% Verdana, sans-serif; text-align: center;
+        }
+
+div.popup_unavailable div.inside div.text {display: none;}
+
+div.popup_unavailable div.inside:hover div.text {
+        display: block;
+        position: absolute; top: 25px; left: 25px; width: 125px;
+        padding: 5px; margin: 10px; z-index: 50;
+        color: #AAA; background-color: black;
+        font: 10px Verdana, sans-serif; text-align: center;
+        }
+
+/* For tabs */
+
+.ui-tabs-hide { display: none; }
+
+li.inline {
+	display: inline;
+	list-style-type: none;
+	font-size: 12px;
+	padding: 0.5em;
+	}
+
+.normal {
+	color: #000000;
+	}
+
+.red {
+	color: #FF0000;
+	}
+
+ul.vert {
+	list-style-type: none;
+	font-size: 12px;
+	}
+
+ul { 
+	text-align: center;
+	padding: 0.5em
+	}
+
+/* For forms */
+
+form {
+	text-align: center;
+	}
+
+/* For links */
+
+a:link { 
+	text-decoration:none 
+	}
+
+a:active { 
+	text-decoration:none 
+	}
+
+a:hover {
+	text-decoration: underline;
+	}
+
+a.tabs {
+	font-size: 14px;
+	}
+
+a:visited.nohist { 
+	text-decoration:none 
+	}
+	
+/* CSS text redirection -- thanks to http://techblog.tilllate.com/2008/07/20/ten-methods-to-obfuscate-e-mail-addresses-compared/ for the inspiration */
+
+span.codedirection {
+	unicode-bidi:bidi-override;
+	direction: rtl;
+}
+
+.email_color {
+	color: #0000FF;
+}
+
+/* Lab Search -- hide software check and num_comps check unless the user explicitly wants to see them */
+
+#software_check, #comps_check {
+	display: none;
+}
+
+/* Coda-like bubble */
+
+.bubbleInfo {
+	position: relative;
+}
+
+.hover_popup {
+	position: absolute;
+	width: 400px;
+	text-align: center;
+	display: none;
+}
+
+#hover_picture {
+	background-color: black;	
+	position: absolute;
+	width: 100px;
+	height: 50px;
+	z-index: 50;
+}
+
+p.lab_popup {
+	font-size: 11px;
+}
+
+p.printer_popup {
+	position: relative;
+	left: -30px;
+	font-size: 11px;	
+}
+
+p.general_info_popup {
+	position: relative;
+	left: 10px;
+	font-size: 11px;
+}
+
+p.search_popup {
+	position: relative;
+	font-size: 11px;
+}
+
+p.login_popup {
+	position: relative;
+	left: -30px;
+	font-size: 11px;
+}
+
+p.feedback_popup {
+	position: relative;
+	left: 27px;
+	font-size: 11px;
+}
+
+td {
+  padding: 6px;
+}
+
+th {
+  text-align: center;
+  padding: 6px;
+}

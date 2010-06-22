@@ -1,0 +1,12 @@
+/* CSS for displaying lab sketchups as div backgrounds */
+
+div#ccl {
+	height: 762px;
+	width: 1436px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../pictures/lab_sketchups/ccl.png");
+	background-repeat: no-repeat;
+	}
+
+
